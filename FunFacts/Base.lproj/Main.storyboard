@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUm-8n-HND">
+                                <rect key="frame" x="98" y="617" width="216" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9lA-Az-SHh"/>
+                                    <constraint firstAttribute="width" constant="216" id="wSj-Bx-3cV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" red="0.30196078431372547" green="0.68627450980392157" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBX-ql-W3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgc-ha-FVS">
+                                <rect key="frame" x="148" y="232" width="116" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="KhZ-20-1yX"/>
+                                    <constraint firstAttribute="width" constant="116" id="ca7-DD-1P1"/>
+                                    <constraint firstAttribute="height" constant="22" id="pVe-a8-px1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="ww2-BS-2ID"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" text="You are born with 300 bones; by the time you are an adult you will have 206." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWJ-5F-5hK">
+                                <rect key="frame" x="98" y="290" width="226" height="67.333333333333314"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44884159482758623" green="0.75221803160919531" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tgc-ha-FVS" secondAttribute="trailing" constant="130" id="1ol-sn-G0N"/>
+                            <constraint firstAttribute="trailing" secondItem="pWJ-5F-5hK" secondAttribute="trailing" constant="90" id="2R2-4Z-K5k"/>
+                            <constraint firstItem="sUm-8n-HND" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78.010000000000005" id="4Xi-Xs-oE0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sUm-8n-HND" secondAttribute="trailing" constant="79.989999999999995" id="7DM-lL-tmw"/>
+                            <constraint firstItem="pWJ-5F-5hK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="98" id="7S3-7C-I12"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sUm-8n-HND" secondAttribute="bottom" constant="29" id="7x4-m2-mdf"/>
+                            <constraint firstItem="pWJ-5F-5hK" firstAttribute="top" secondItem="Tgc-ha-FVS" secondAttribute="bottom" constant="69.109999999999999" id="IOg-Xb-lqy"/>
+                            <constraint firstItem="pWJ-5F-5hK" firstAttribute="top" secondItem="Tgc-ha-FVS" secondAttribute="bottom" constant="36" id="SbK-b6-97C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pWJ-5F-5hK" secondAttribute="trailing" constant="70" id="XqD-r8-16j"/>
+                            <constraint firstItem="pWJ-5F-5hK" firstAttribute="top" secondItem="Tgc-ha-FVS" secondAttribute="bottom" constant="36" id="YNw-h1-DJ9"/>
+                            <constraint firstItem="pWJ-5F-5hK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="Yeb-IO-Vbb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tgc-ha-FVS" secondAttribute="trailing" constant="130.13" id="eUD-05-FDm"/>
+                            <constraint firstItem="Tgc-ha-FVS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127.87" id="jyS-uP-mXB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sUm-8n-HND" secondAttribute="bottom" constant="59" id="ngE-WB-Mca"/>
+                            <constraint firstItem="Tgc-ha-FVS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="o90-fQ-BdX"/>
+                            <constraint firstItem="Tgc-ha-FVS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="212" id="owG-OL-IRP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="sUm-8n-HND" id="1OY-TL-myQ"/>
+                        <outlet property="funFactLabel" destination="pWJ-5F-5hK" id="he4-Rc-6fW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="426"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
